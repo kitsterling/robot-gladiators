@@ -6,11 +6,21 @@ var playerMoney = 10;
 // You can also log multiple values at once like this
 console.log("Name: "+ playerName + ", ", playerAttack , " AD, " + playerHealth, " Health, $" + playerMoney);
 
-var enemyName = "Golurk";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+console.log(enemyNames);
+console.log(enemyNames[0]);
+var enemyName = enemyNames[0];
+
+for(var i = 0; i < enemyNames.length; i++) {
+    console.log(enemyNames[i]);
+    console.log(i);
+    console.log(enemyNames[i] + " is at " + i + " index");
+  }
+
 var enemyHealth = 50;
 var enemyAttack = 12;
 
-var fight = function() {
+var fight = function(enemyName) {
     // Welcome
     window.alert("Welcome to Robot Gladiators!");
     //Fight or Skip
@@ -58,4 +68,4 @@ var fight = function() {
 
 };
 
-fight();
+fight(enemyRo);
